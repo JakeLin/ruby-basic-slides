@@ -99,9 +99,9 @@
 					<section data-markdown>
 						<script type="text/template">
 							## 做个快乐Ruby程序员
-							Ruby程序员 vs 非Ruby程序员
-
-							!["Ruby程序员"](https://raw.githubusercontent.com/JakeLin/ruby-basic-slides/master/images/Ruby-programmer.jpg) !["非Ruby程序员"](https://raw.githubusercontent.com/JakeLin/ruby-basic-slides/master/images/Non-ruby-programmer.jpg)
+							| Ruby程序员 | 非Ruby程序员 |
+							|-------------|-------------|
+							|!["Ruby程序员"](https://raw.githubusercontent.com/JakeLin/ruby-basic-slides/master/images/Ruby-programmer.jpg)|!["非Ruby程序员"](https://raw.githubusercontent.com/JakeLin/ruby-basic-slides/master/images/Non-ruby-programmer.jpg) |
 						</script>
 					</section>
 					<section data-markdown>
@@ -124,8 +124,14 @@ Ruby实现
 							## Ruby程序员只关心做什么，不关心怎么做
 							像人类那样思维，而不是像编译器那样思维
 
-							使用CSV文件
+使用CSV文件的例子
 
+	require 'csv'
+	CSV.parse(env['api.request.input']) do |row|
+		type = row[0]
+		subject = row[1]
+		p "type: #{type}, subject: #{subject}"
+	end
 						</script>
 					</section>
 				</section>
@@ -134,34 +140,38 @@ Ruby实现
 						<script type="text/template">
 							## 如何安装Ruby
 							在Windows下安装Ruby - RubyInstaller
-							!["使用CocoaPods"](http://www.eekay.nl/me/wp-content/uploads/2013/07/cocoapods.png)
+							![](http://blog.mmediasys.com/wp-content/uploads/2008/03/rubyinstaller-logo.png)
 						</script>
 					</section>
 					<section data-markdown>
 						<script type="text/template">
 							## 在Mac OSX下安装Ruby - rbenv
-							!["使用CocoaPods"](http://www.eekay.nl/me/wp-content/uploads/2013/07/cocoapods.png)
+							![](http://www.nurelm.com/themanual/wp-content/uploads/2014/05/rbenv.png)
 						</script>
 					</section>
 					<section data-markdown>
 						<script type="text/template">
 							## 在Linux下安装Ruby - rbenv
-							动手（zhe teng，英文 Z-turnablity）能力比我强，请自己zhe teng去。
-							!["使用CocoaPods"](http://www.eekay.nl/me/wp-content/uploads/2013/07/cocoapods.png)
+							动手（zhe teng）能力比我强，请自己折腾去。
+
+							英文 Z-Turnability
+
+							![](http://image.zcool.com.cn/35/1/m_1302664610304.jpg)
 						</script>
 					</section>
 					<section data-markdown>
 						<script type="text/template">
 							## 使用Cloud 9开发Ruby程序
 							Cloud 9是一个云端IDE，可以开发Ruby和Node.JS等程序
-							!["使用CocoaPods"](http://www.eekay.nl/me/wp-content/uploads/2013/07/cocoapods.png)
+							![](http://upload.wikimedia.org/wikipedia/commons/5/5f/Cloud9IDE.png)
 						</script>
 					</section>
 					<section data-markdown>
 						<script type="text/template">
-							## 使用Nutrio.IO开发Ruby程序
-							Nutrio.是一个云端IDE，可以开发Ruby，GO和Node.JS等程序
-							!["使用CocoaPods"](http://www.eekay.nl/me/wp-content/uploads/2013/07/cocoapods.png)
+							## 使用NITROUS.IO开发Ruby程序
+							NITROUS.IO是一个云端IDE，可以开发Ruby，GO和Node.JS等程序，请使用[www.nitrous.io/join/GlCdnQLicwA](https://www.nitrous.io/join/GlCdnQLicwA)注册，我们都各种得到10个额外的N2O
+
+							![](http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2013/11/256-spedometer.png)
 						</script>
 					</section>
 				</section>
@@ -170,32 +180,33 @@ Ruby实现
 						<script type="text/template">
 							## Ruby交互程序（irb）
 							在Windows下使用irb
-							!["使用CocoaPods"](http://www.eekay.nl/me/wp-content/uploads/2013/07/cocoapods.png)
+
+							![](http://assets.devx.com/articlefigs/15381.gif)
 						</script>
 					</section>
 					<section data-markdown>
 						<script type="text/template">
 							## 在Mac OSX下使用irb
-							!["使用CocoaPods"](http://www.eekay.nl/me/wp-content/uploads/2013/07/cocoapods.png)
+							![](http://aralbalkan.com/wp-content/uploads/2006/10/requiring_rubygems_in_irb.jpg)
 						</script>
 					</section>
 					<section data-markdown>
 						<script type="text/template">
 							## 在repl.it下使用irb
 							repl.it是一个在线执行ruby程序的平台。
-							!["使用CocoaPods"](http://www.eekay.nl/me/wp-content/uploads/2013/07/cocoapods.png)
+							![](http://cdn.altrn.tv/s/202c4131-4076-e311-9822-002590a05f5f_2_full.png)
 						</script>
 					</section>
 					<section data-markdown>
 						<script type="text/template">
 							## 在Cloud 9下使用irb
-							!["使用CocoaPods"](http://www.eekay.nl/me/wp-content/uploads/2013/07/cocoapods.png)
+							![](http://upload.wikimedia.org/wikipedia/commons/5/5f/Cloud9IDE.png)
 						</script>
 					</section>
 					<section data-markdown>
 						<script type="text/template">
 							## 在Nutrio.IO下使用irb
-							!["使用CocoaPods"](http://www.eekay.nl/me/wp-content/uploads/2013/07/cocoapods.png)
+							![](http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2013/11/256-spedometer.png)
 						</script>
 					</section>
 				</section>
@@ -210,19 +221,19 @@ Ruby实现
 					<section data-markdown>
 						<script type="text/template">
 							## 在Mac OSX下编写和执行第一个Ruby程序
-							!["使用CocoaPods"](http://www.eekay.nl/me/wp-content/uploads/2013/07/cocoapods.png)
+							![](http://www.eekay.nl/me/wp-content/uploads/2013/07/cocoapods.png)
 						</script>
 					</section>
 					<section data-markdown>
 						<script type="text/template">
 							## 在Cloud 9下下编写和执行第一个Ruby程序
-							!["使用CocoaPods"](http://www.eekay.nl/me/wp-content/uploads/2013/07/cocoapods.png)
+							![](http://www.eekay.nl/me/wp-content/uploads/2013/07/cocoapods.png)
 						</script>
 					</section>
 					<section data-markdown>
 						<script type="text/template">
-							## 在Nutrio.IO下编写和执行第一个Ruby程序
-							!["使用CocoaPods"](http://www.eekay.nl/me/wp-content/uploads/2013/07/cocoapods.png)
+							## 在NITROUS.IO下编写和执行第一个Ruby程序
+							![](http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2013/11/256-spedometer.png)
 						</script>
 					</section>
 				</section>
