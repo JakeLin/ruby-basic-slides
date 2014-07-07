@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Ruby Basic</title>
+
+		<meta name="description" content="Ruby Basic Tutorial">
+		<meta name="author" content="Jake Lin">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/simple.css" id="theme">
+
+		<link rel="stylesheet" href="css/custom.css">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							# Ruby基础
+							!["Ruby"](http://compsci.ca/blog/wp-content/uploads/2007/04/ruby_logo.gif)
+						</script>
+					</section>
+			    <section data-markdown>
+						<script type="text/template">
+							## 课程概况
+							* 课程目标
+							* 适合群体
+							  1. 没人任何开发经验的初学者
+							  1. 具有C#, Java和Javascript等语言开发经验的Ruby初学者
+							* 程序源码：[github.com/JakeLin/SwiftWeather](https://github.com/JakeLin/SwiftWeather)
+							* 幻灯片
+								1. 在线幻灯片：[swiftweather.herokuapp.com](http://swiftweather.herokuapp.com/)
+								1. 源码：[github.com/JakeLin/SwiftWeather-Slides](http://github.com/JakeLin/SwiftWeather-Slides/)
+						</script>
+					</section>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## 什么是Ruby
+						* Matz发明了Ruby
+						* Ruby与Ruby on Rails
+					</script>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							## 学习Ruby的好处
+							### Ruby是萌妹子专属语言
+							<iframe width="800" height="600" src="https://www.kickstarter.com/projects/lindaliukas/hello-ruby/widget/video.html" frameborder="0" scrolling="no"> </iframe>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## 做个快乐Ruby程序员
+							Ruby程序员 vs 非Ruby程序员
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## Ruby是为人而不是机器而设计的语言
+							### 一百次“我爱你”
+其他语言的实现
+
+	for(var i=0; i<100; ++i) {
+		console.log('I love you!');
+	}
+
+Ruby实现
+
+	？？？
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## Ruby程序员只关心做什么，不关心怎么做
+							像人类那样思维，而不是像编译器那样思维
+
+							使用CSV文件
+
+						</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							## 如何安装Ruby
+							在Windows下安装Ruby - RubyInstaller
+							!["使用CocoaPods"](http://www.eekay.nl/me/wp-content/uploads/2013/07/cocoapods.png)
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## 在Mac OSX下安装Ruby - rbenv
+							!["使用CocoaPods"](http://www.eekay.nl/me/wp-content/uploads/2013/07/cocoapods.png)
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## 在Linux下安装Ruby - rbenv
+							动手（zhe teng，英文 Z-turnablity）能力比我强，请自己zhe teng去。
+							!["使用CocoaPods"](http://www.eekay.nl/me/wp-content/uploads/2013/07/cocoapods.png)
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## 使用Cloud 9开发Ruby程序
+							Cloud 9是一个云端IDE，可以开发Ruby和Node.JS等程序
+							!["使用CocoaPods"](http://www.eekay.nl/me/wp-content/uploads/2013/07/cocoapods.png)
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## 使用Nutrio.IO开发Ruby程序
+							Nutrio.是一个云端IDE，可以开发Ruby，GO和Node.JS等程序
+							!["使用CocoaPods"](http://www.eekay.nl/me/wp-content/uploads/2013/07/cocoapods.png)
+						</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							## Ruby交互程序（irb）
+							在Windows下使用irb
+							!["使用CocoaPods"](http://www.eekay.nl/me/wp-content/uploads/2013/07/cocoapods.png)
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## 在Mac OSX下使用irb
+							!["使用CocoaPods"](http://www.eekay.nl/me/wp-content/uploads/2013/07/cocoapods.png)
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## 在repl.it下使用irb
+							repl.it是一个在线执行ruby程序的平台。
+							!["使用CocoaPods"](http://www.eekay.nl/me/wp-content/uploads/2013/07/cocoapods.png)
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## 在Cloud 9下使用irb
+							!["使用CocoaPods"](http://www.eekay.nl/me/wp-content/uploads/2013/07/cocoapods.png)
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## 在Nutrio.IO下使用irb
+							!["使用CocoaPods"](http://www.eekay.nl/me/wp-content/uploads/2013/07/cocoapods.png)
+						</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							## 第一个Ruby程序
+							在Windows下编写和执行第一个Ruby程序
+							!["使用CocoaPods"](http://www.eekay.nl/me/wp-content/uploads/2013/07/cocoapods.png)
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## 在Mac OSX下编写和执行第一个Ruby程序
+							!["使用CocoaPods"](http://www.eekay.nl/me/wp-content/uploads/2013/07/cocoapods.png)
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## 在Cloud 9下下编写和执行第一个Ruby程序
+							!["使用CocoaPods"](http://www.eekay.nl/me/wp-content/uploads/2013/07/cocoapods.png)
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## 在Nutrio.IO下编写和执行第一个Ruby程序
+							!["使用CocoaPods"](http://www.eekay.nl/me/wp-content/uploads/2013/07/cocoapods.png)
+						</script>
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
