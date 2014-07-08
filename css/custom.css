@@ -1,5 +1,11 @@
+/* 字体 微软雅黑（Windows）黑体（Mac OSX） */
+.reveal h3, .reveal p, .reveal th {
+  font-family: "Microsoft YaHei", STHeiti, "News Cycle", Impact, sans-serif;
+}
+
 /* 大标题：30号红色（R201 G66 B81）*/
 .reveal h1, .reveal h2 {
+  font-family: "Microsoft YaHei", STHeiti, "News Cycle", Impact, sans-serif;
   color: #c94251;
 }
 
@@ -10,6 +16,7 @@
 
 /* 一级标题：25号 */
 .reveal section>ul>li {
+  font-family: "Microsoft YaHei", STHeiti, "News Cycle", Impact, sans-serif;
   list-style-type: none;
   font-size: 50px;
   line-height: 60px;
@@ -17,6 +24,7 @@
 
 /* 正文：20号 */
 .reveal section>ul>li>ol>li, .reveal section>ol>li {
+  font-family: "Microsoft YaHei", STHeiti, "News Cycle", Impact, sans-serif;
   list-style-type: none;
   font-size: 40px;
   line-height: 45px;
