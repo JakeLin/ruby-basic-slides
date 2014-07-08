@@ -1,3 +1,23 @@
+/* 大标题：30号红色（R201 G66 B81）*/
 .reveal h1, .reveal h2 {
-  color:red;
+  color: #c94251;
+}
+
+.reveal h2 {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+/* 一级标题：25号 */
+.reveal section>ul>li {
+  list-style-type: none;
+  font-size: 50px;
+  line-height: 60px;
+}
+
+/* 正文：20号 */
+.reveal section>ul>li>ol>li, .reveal section>ol>li {
+  list-style-type: none;
+  font-size: 40px;
+  line-height: 45px;
 }
